@@ -86,7 +86,6 @@ public class modul2 extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 220, -1));
 
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\rotip1 (5).png")); // NOI18N
         jLabel11.setText("Semua Tersedia Disini\n");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 220));
 
@@ -199,6 +198,11 @@ public class modul2 extends javax.swing.JFrame {
         jPanel2.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, -1, -1));
 
         tfTotal.setEditable(false);
+        tfTotal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfTotalActionPerformed(evt);
+            }
+        });
         jPanel2.add(tfTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 310, 170, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -206,7 +210,6 @@ public class modul2 extends javax.swing.JFrame {
         jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, -1, -1));
         jPanel2.add(tfUang, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 110, -1));
 
-        tfKembalian.setEditable(false);
         tfKembalian.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tfKembalianActionPerformed(evt);
@@ -248,29 +251,13 @@ public class modul2 extends javax.swing.JFrame {
             }
         });
         jPanel2.add(tfJumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 40, -1));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\fotojet-8-1jpg-20211219025657 (1).jpg")); // NOI18N
         jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
-
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\canai (1).jpg")); // NOI18N
         jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, -1, -1));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\bluder2 (1).jpg")); // NOI18N
         jPanel2.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, -1, -1));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\odading2 (1).jpg")); // NOI18N
         jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, -1, -1));
-
-        jLabel17.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\Roti-Sisir (1).png")); // NOI18N
         jPanel2.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 100, -1, -1));
-
-        jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\panada (1).png")); // NOI18N
         jPanel2.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 100, -1, -1));
-
-        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\keju (1).png")); // NOI18N
         jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, -1, -1));
-
-        jLabel20.setIcon(new javax.swing.ImageIcon("C:\\Users\\Yusfian Braman Tio\\Downloads\\meses-removebg-preview (1).png")); // NOI18N
         jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -310,6 +297,7 @@ public class modul2 extends javax.swing.JFrame {
 
     private void tfKembalianActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfKembalianActionPerformed
         // TODO add your handling code here:
+        tfKembalian.setEditable(false);
     }//GEN-LAST:event_tfKembalianActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
@@ -411,6 +399,10 @@ public class modul2 extends javax.swing.JFrame {
     private void rbBluderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbBluderActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rbBluderActionPerformed
+
+    private void tfTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfTotalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfTotalActionPerformed
 
     /**
      * @param args the command line arguments
